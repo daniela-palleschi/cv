@@ -5,8 +5,8 @@ output:
     template: svm-latex-cv.tex
 geometry: margin=1in
 
-title: "CV"
-author: Daniela Palleschi
+title: "D. Palleschi - Curriculum Vitae"
+author: "Daniela Palleschi"
 
 jobtitle: "Doctoral Candidate and Research Fellow"
 address: "Humboldt-Universität zu Berlin"
