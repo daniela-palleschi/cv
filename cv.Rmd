@@ -8,7 +8,7 @@ geometry: margin=1in
 title: "D. Palleschi - Curriculum Vitae"
 author: "Daniela Palleschi"
 
-jobtitle: "Doctoral Candidate and Research Fellow"
+jobtitle: "Research Associate (wiss. Mitarbeiterin)"
 address: "Humboldt-Universität zu Berlin"
 fontawesome: yes
 email: daniela.palleschi@hu-berlin.de
