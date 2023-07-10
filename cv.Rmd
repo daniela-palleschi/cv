@@ -1,0 +1,251 @@
+---
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+    template: svm-latex-cv.tex
+geometry: margin=1in
+
+title: "CV"
+author: Daniela Palleschi
+
+jobtitle: "Doctoral Candidate and Research Fellow"
+address: "Humboldt-Universität zu Berlin"
+fontawesome: yes
+email: daniela.palleschi@hu-berlin.de
+# github: daniela-palleschi
+# twitter: 
+#osf: "Enter 5 digit osf string here"
+# phone: "+353 1 408 4800"
+web: daniela-palleschi.github.io
+updated: TRUE
+rdateformat: "`r format(Sys.time(), '%d %b %Y')`"
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+linkcolor: red
+urlcolor: black
+---
+
+# Academic appointments
+
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill  2023 - present\break 
+Statistics consultant and Scientific staff member (wiss. Mitarbeiterin) \hfill\break
+
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill  2019 - 2023\break Research Fellow (wiss. Mitarbeiterin) \hfill\break
+DFG, grant KN 897/9-1: ‘Effects of lifetime and fact knowledge in language comprehension’
+
+# Education
+
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill 2018 - present\break 
+Doctoral candidate in Psycholinguistics \hfill 
+
+*Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2017 - present\break
+Doctoral student
+
+*Einstein Center for Neurosciences Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - present\break
+Doctoral fellow
+
+*University of Eastern Finland (FI), University of Potsdam (DE), University of Groningen (NL)* \hfill \break
+ M.Sc. in Clinical Lingusitics (Erasmus Mundus joint Master Degree) \hfill 2017
+
+*University of Finland* \hfill \break
+M.A. in Clinical Lingusitics \hfill 2017
+
+*University of Toronto* \hfill \break
+B.A. Honours Specialist in Lingusitics \hfill 2012
+
+# Awards and Fellowships
+
+*Einstein Center for Neuroscience Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - 2019 \break
+Doctoral scholarship
+
+# Teaching Experience
+
+*Reproducible analysis reports with eye-tracking reading time data* \hfill 2023 \break
+M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+
+*Angewandte Datenverarbeitung und Visualisierung* \hfill 2023 \break
+B.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+
+*Introduction to Ibex and PennController: Internet-based experiments* (workshop) \hfill 2020 \break
+Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+
+*Introduction to Statistics with R and RStudio*\hfill 2019-2020 \break
+M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+
+*Language and the Brain* (tutorial) \hfill 2018, 2019, 2020 \break
+Berlin School of Mind and Brain (M.A. program), Humboldt-Universität zu Berlin \hfill \break 
+Accompanied lectures from Prof. Pia Knoeferle and Prof. Friedemann Pulvermüller
+
+# Non-academic experience
+
+*Teacher of English as a Second Language* (adults and children) \hfill 2012-2017\break
+Marcus Evans Linguarama, Berlin, Germany
+
+*TESOL Certification* (Teacher of English to Speakers of Other Languages) \hfill 2012\break
+SOL International School of Language, Toronto, Canada
+
+# Publications
+
+## Peer-reviewed Conference Proceedings
+
+\begingroup
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+
+**Palleschi, D.**, Knoeferle, P. (2022). “Activation of biographical information via picture of cultural figures: an eye-tracking during reading study” *Proceedings of the 42nd
+Annual Meeting of the Cognitive Science Society.* Toronto, Canada: Cognitive Science Society
+
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. (2020). “Effects of linguistic context and world knowledge on the processing of tense and aspect: evidence from eye-tracking” *Proceedings of the 42nd
+Annual Meeting of the Cognitive Science Society.* Toronto, Canada: Cognitive Science Society
+
+\endgroup
+## Works in Progress
+
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. “Dead or alive - Effect of lifetime information on processing of temporal verb morphology: evidence from eye-tracking and self-paced reading”
+
+## Conference Presentations
+
+*Experimental Pragmatics Conference (XPrag)*, Pavia, Italy \hfill 2022 \break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Processing the Perfect Lifetime Effect: the role of lifetime information source." (poster)
+
+*Architectures and Mechanisms of Language Processing*, University of York, UK \hfill 2022 \break
+**Palleschi, D.**, Knoeferle, P. "Availability of speaker-specific lifetime and biographical knowledge during comprehension: evidence from eye-tracking during reading." (poster)
+
+*CogSci*, Toronto, Canada \hfill 2022 \break
+**Palleschi, D.**, Knoeferle, P. "Activation of biographical information via picture of cultural figures during comprehension: evidence from eye-tracking during reading." (poster)
+
+*IMPRS Conference*, Max Planck Institute for Psycholinguistics, the Netherlands \hfill 2022 \break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Context effects in the processing of temporal verb morphology: a self-paced reading study." (poster)
+
+*IMPRS Conference*, Max Planck Institute for Psycholinguistics, the Netherlands \hfill 2022 \break
+**Palleschi, D.**, Knoeferle, P. "Effects of prior speaker-specific knowledge on language comprehension: an eye-tracking during reading study" (poster)
+
+*Experiments in Linguistic Meaning (ELM)*, University of Pennsylvania, USA \hfill 2022 \break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Effects of referent lifetime knowledge on processing of verb morphology." (poster)
+
+*Annual Conference of Human Sentence Processing*, UC Santa Cruz, USA \hfill 2022\break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Effects of long-term biographical knowledge on the processing of temporal phrases and facts: an eye-tracking reading study." (poster)
+
+*Annual Conference of Human Sentence Processing*, UC Santa Cruz, USA \hfill 2022\break
+**Palleschi, D.**, Knoeferle, P. "Context effects in the processing of temporal verb morphology: a self-paced reading study." (poster)
+
+*CogSci*, Vienna, Austria\hfill 2021\break
+**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effects of lifetime and fact knowledge in language comprehension"  (poster)
+
+*CUNY Annual Conference of Human Sentence Processing*, University of Pennsylvania, USA \hfill 2021\break
+**Palleschi, D.**, Knoeferle, P. "Effects of lifetime and fact knowledge in
+language comprehension" (poster)
+
+*CUNY Annual Conference of Human Sentence Processing*, University of Pennsylvania, USA \hfill 2021\break
+**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effect of referent lifetime in the processing of verbal morphology: a self-paced reading study" (poster)
+
+*CUNY Annual Conference of Human Sentence Processing*, University of Massachusetts, Amherst, USA \hfill 2020\break
+**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effect of referent lifetime in the processing of verbal morphology: a self-paced reading study" (poster)
+
+*Architectures and Mechanisms of Language Processing*, Moscow, Russia \hfill 2019\break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "What's in a name? Integration of linguistic and non-linguistic context in language processing" (poster)
+
+*Processing Tense Workshop*, Tübingen,  \hfill 2019\break
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Processing the Present Perfect Lifetime Effect: an eye-tracking during reading study on the integration of context, tense, and aspect" (talk)
+
+## Invited talks
+
+*Psychosemantics group*, Universität Potsdam, Germany\hfill 2021\break
+"Effect of lifetime information on the processing of temporal verb morphology"
+Organiser: Prof. Nicole Gotzner
+
+*Language and Cognition Lab*, Heidelberg University, Germany\hfill 2020\break
+"Integration of specific world knowledge and verbal morphology during language processing"
+Organiser: Prof. Johannes Gerwien
+
+# Workshops, summer schools, journal clubs (attendance)
+
+## Data Analyses
+
+*Intro to Bayesian Analyses for Speech and Language Scientists*\hfill 2022\break
+University of Konstanz, Germany\hfill\break
+Workshop taught by Dr Stefano Coretta
+
+*Introduction to Bayesian data analysis*\hfill 2022\break
+Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
+Summer school taught by Shravan Vasishth, assisted by Anna Laurinavichyute
+
+*Generalised Additive Modelling in Statistics*\hfill 2022
+Leibniz-Zentrum Allgemeine Sprachwissenschaft (ZAS Berlin), Germany
+Workshop taught by Màrton Sóskuthy
+
+*Advanced methods in frequentist statistics with Julia* \hfill 2021\break
+Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
+Taught by Phillip Alday, Douglas Bates, and Reinhold Kliegl
+
+*Foundational methods in frequentist statistics* \hfill 2020\break
+Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
+Taught by Daniel Schad
+
+## Methods and MetaScience
+
+*Coding Club::Creating an R Package*, led by Prof. Lisa DeBruine \hfill 2022\break
+Creating an R package to share code and data from a research project
+
+*Git Collaborative*, Max Planck Institute for Psycholinguistics \hfill 2022\break
+Workshop
+
+*Git Basics*, Max Planck Institute for Psycholinguistics \hfill 2022\break
+Workshop
+
+*Data wrangling and reproducible reports with tidyverse and R-markdown* \hfill 2021\break
+Workshop
+
+## Open Science
+
+*ReproducibiliTea*, Berlin chapter \hfill 2021 -\break
+Journal Club
+
+# Organisation
+
+*Friday Primes*, monthly meet-up for Early Career Researchers in psycholinguistics\hfill 2020 -\break
+Co-organisers: Radim Lacina (University of Potsdam) and Isabella Boux (Freie Universität)
+
+*Embodied and Situated Language Processing and AttLis*, joint conference \hfill 2019\break
+Humboldt-Universität zu Berlin, Germany\hfill\break
+Co-organisers: Aine Ito, Camilo R. Ronderos, Huong Nguyen, Katja Mquate
+
+*Architecture and Mechanisms for Language Processing* \hfill 2018\break 
+On-site organisation
+
+# Mentoring and training
+
+Mentored Master's Thesis on world knowledge effects in tense processing (Aliona Petrenco);\hfill \break
+Hired, trained, and managed three research assistants (Studentische und wissenschaftliche Hilfskraft); \hfill \break
+Training of student interns in data collection (eye-tracking and EEG)
+
+# Memberships
+
+*Cognitive Science Society* \hfill 2020 - present\break
+*Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2018 - present\break
+*Einstein Center for Neurosciences Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - present\break
+
+# Technical skills
+
+Eye-tracking (EyeLink 1000, Experiment Builder, EyeLink DataViewer)\hfill\break
+Internet-based experiments (PCIbex, Prolific, ClickWorker)\hfill\break
+EEG data collection (BrainProducts)\hfill\break
+Audio processing (Praat, Audacity)\hfill\break
+R and RStudio (data wrangling, analysis, visualisation)\hfill\break
+Technical writing/Dynamic reports (Quarto, RMarkdown, LaTeX)\hfill\break
+Version control (Git, GitHub, GitLab)
+
+# Language competences
+
+English (native)\hfill\break
+German (Intermediate)\hfill\break
+
+# References
+
+Available upon request
+\vfill
