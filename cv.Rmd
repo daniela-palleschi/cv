@@ -31,15 +31,15 @@ urlcolor: black
 
 # Academic appointments
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill  2023 - present\break 
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill  2023 - present\break 
 Statistics consultant and Scientific staff member (wiss. Mitarbeiterin) \hfill\break
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill  2019 - 2023\break Research Fellow (wiss. Mitarbeiterin) \hfill\break
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill  2019 - 2023\break Research Fellow (wiss. Mitarbeiterin) \hfill\break
 DFG, grant KN 897/9-1: ‘Effects of lifetime and fact knowledge in language comprehension’
 
 # Education
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Lingusitics \hfill 2018 - present\break 
+*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill 2018 - present\break 
 Doctoral candidate in Psycholinguistics \hfill 
 
 *Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2017 - present\break
@@ -49,13 +49,13 @@ Doctoral student
 Doctoral fellow
 
 *University of Eastern Finland (FI), University of Potsdam (DE), University of Groningen (NL)* \hfill \break
- M.Sc. in Clinical Lingusitics (Erasmus Mundus joint Master Degree) \hfill 2017
+ M.Sc. in Clinical Linguistics (Erasmus Mundus joint Master Degree) \hfill 2017
 
 *University of Finland* \hfill \break
-M.A. in Clinical Lingusitics \hfill 2017
+M.A. in Clinical Linguistics \hfill 2017
 
 *University of Toronto* \hfill \break
-B.A. Honours Specialist in Lingusitics \hfill 2012
+B.A. Honours Specialist in Linguistics \hfill 2012
 
 # Awards and Fellowships
 
@@ -64,10 +64,13 @@ Doctoral scholarship
 
 # Teaching Experience
 
+*Regression for Linguists* \hfill 2023/24 \break
+M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+
 *Reproducible analysis reports with eye-tracking reading time data* \hfill 2023 \break
 M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
 
-*Angewandte Datenverarbeitung und Visualisierung* \hfill 2023 \break
+*Angewandte Datenverarbeitung und Visualisierung* \hfill 2023-2024 \break
 B.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
 
 *Introduction to Ibex and PennController: Internet-based experiments* (workshop) \hfill 2020 \break
