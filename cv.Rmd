@@ -8,10 +8,10 @@ geometry: margin=1in
 title: "D. Palleschi - Curriculum Vitae"
 author: "Daniela Palleschi"
 
-jobtitle: "Research Associate (wiss. Mitarbeiterin)"
-address: "Humboldt-Universität zu Berlin"
+jobtitle: "Scientific support (Referentin) for statistics and data management"
+address: "Leibniz-Zentrum Allgemeine Sprachwissenschaft (ZAS; Leibniz-Centre General Linguistics)"
 fontawesome: yes
-email: daniela.palleschi@hu-berlin.de
+email: palleschi@leibniz-zas.de
 # github: daniela-palleschi
 # twitter: 
 #osf: "Enter 5 digit osf string here"
@@ -29,67 +29,538 @@ linkcolor: red
 urlcolor: black
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = F,
+                      message = F)
+```
+
+
 # Academic appointments
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill  2023 - present\break 
-Statistics consultant and Scientific staff member (wiss. Mitarbeiterin) \hfill\break
+```{r}
+pacman::p_load(tidyverse, gt, knitr, kableExtra)
+```
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill  2019 - 2023\break Research Fellow (wiss. Mitarbeiterin) \hfill\break
-DFG, grant KN 897/9-1: ‘Effects of lifetime and fact knowledge in language comprehension’
+```{r}
+current_job <-
+  tribble(
+  ~"Year", ~"Title",
+  # ZAS job
+  "09.2024 - present","\\textbf{Scientific support for data science and data management} (Referentin)",
+    "", "Leibniz-Zentrum Allgemeine Sprachwissenschaft (ZAS)",
+)
+```
+
+
+```{r}
+past_jobs <-
+  tribble(
+  ~"Year", ~"Title",
+  # Stats job
+  "02.2023 - 08.2024","\\textbf{Statistics consultant and Scientific staff member} (wiss. Mitarbeiterin)",
+    "", "Humboldt-Universität zu Berlin, Institute for German Langauge and Linguistics",
+  # DFG job
+  "12.2019 - 01.2023","\\textbf{Research Fellow} (wiss. Mitarbeiterin)",
+    "", "Humboldt-Universität zu Berlin, Institute for German Langauge and Linguistics",
+    "", "DFG, grant KN 897/9-1: ‘Effects of lifetime and fact knowledge in language
+  comprehension’"
+)
+```
+
+
+```{r}
+rbind(current_job, past_jobs) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        bottomrule = '',
+        toprule = '',
+        midrule = '',
+    linesep = "") 
+
+```
+
 
 # Education
 
-*Humboldt-Universität zu Berlin*, Institute for German Langauge and Linguistics \hfill 2018 - present\break 
-Doctoral candidate in Psycholinguistics \hfill 
+```{r}
+phd <-
+  tribble(
+  ~"Year", ~"Title",
+  "2024","\\textbf{Doctorate in Psycholinguistics} (dr. phil); submitted 2023",
+    "", "Humboldt-Universität zu Berlin, Institute for German Langauge and Linguistics",
+    "", "Dissertation title: \\textit{Processing the Perfect Lifetime Effect: The role of}
+  \\textit{referent-lifetime knowledge in the processing of temporal relations}",
+  "", ""
+)
 
-*Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2017 - present\break
-Doctoral student
+mind_brain <-
+  tribble(
+  ~"Year", ~"Title",
+  "2017 - 2024","\\textbf{Doctoral student} of the Berlin School of Mind and Brain",
+    "", "Humboldt-Universität zu Berlin",
+  "", ""
+)
 
-*Einstein Center for Neurosciences Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - present\break
-Doctoral fellow
+ecn <-
+  tribble(
+  ~"Year", ~"Title",
+  "2017-2024","\\textbf{Doctoral fellow} of the Einstein Center for Neurosciences Berlin",
+    "", "Charité - Universitätsmedizin Berlin",
+  "", ""
+)
+```
 
-*University of Eastern Finland (FI), University of Potsdam (DE), University of Groningen (NL)* \hfill \break
- M.Sc. in Clinical Linguistics (Erasmus Mundus joint Master Degree) \hfill 2017
 
-*University of Finland* \hfill \break
-M.A. in Clinical Linguistics \hfill 2017
+```{r}
+msc <-
+  tribble(
+  ~"Year", ~"Title",
+  "2017","\\textbf{M.Sc. in Clinical Linguistics} (Erasmus Mundus joint Master Degree)",
+    "", "University of Eastern Finland, University of Potsdam, University of Groningen (NL)"
+)
 
-*University of Toronto* \hfill \break
-B.A. Honours Specialist in Linguistics \hfill 2012
+ma <-
+  tribble(
+  ~"Year", ~"Title",
+  "2017","\\textbf{M.A. in Clinical Linguistics}",
+    "", "University of Finland"
+)
+
+
+ba <-
+  tribble(
+  ~"Year", ~"Title",
+  "2012","\\textbf{B.A. Honours Specialist in Linguistics}",
+    "", "University of Toronto"
+)
+
+```
+
+```{r}
+rbind(phd, ecn, mind_brain,
+      msc, ma, ba) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+    linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
 
 # Awards and Fellowships
 
-*Einstein Center for Neuroscience Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - 2019 \break
-Doctoral scholarship
+```{r}
+ecn <-
+  tribble(
+  ~"Year", ~"Title",
+  "2017-2024","\\textbf{Doctoral scholarship} of the Einstein Center for Neurosciences Berlin",
+    "", "\\textit{Charité - Universitätsmedizin Berlin}"
+)
+
+```
+
+```{r}
+rbind(ecn) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+    linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
 
 # Teaching Experience
 
-*Regression for Linguists* \hfill 2023/24 \break
-M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+```{r}
+sol <-
+    tribble(
+    ~"Year", ~"Course",
+    "August 2024", "\\textbf{Open Science Practices for Linguistic Research: Reproducible Analyses in R}",
+        "", "Web book: \\href{https://daniela-palleschi.github.io/SSOL24-reproducibility-workshop/}{\\textit{https://daniela-palleschi.github.io/SSOL24-reproducibility-workshop/}}",
+    "", "Summer School of Linguistics, Budweis, Czechia (4-day workshop)",
+    "", ""
+  ) # https://daniela-palleschi.github.io/SSOL24-reproducibility-workshop/
 
-*Reproducible analysis reports with eye-tracking reading time data* \hfill 2023 \break
-M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+open_sci <- 
+  tribble(
+    ~"Year", ~"Course",
+    "2024", "\\textbf{Open Science Practices: Implementing a Reproducible Analysis Workflow},",
+    "", "Web book: \\href{https://daniela-palleschi.github.io/r4repro_SoSe2024/}{\\textit{https://daniela-palleschi.github.io/r4repro\\_SoSe2024/}}",
+    "", "M.A. course, Institut für deutsche Sprache und Linguistik,",
+    "", "Humboldt-Universität zu Berlin",
+    "", ""
+  )
 
-*Angewandte Datenverarbeitung und Visualisierung* \hfill 2023-2024 \break
-B.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+reg_ling <- 
+  tribble(
+    ~"Year", ~"Course",
+    "2023 - 2024", "\\textbf{Regression for Linguists}",
+    "", "Web book: \\href{https://daniela-palleschi.github.io/reg4ling/}{\\textit{https://daniela-palleschi.github.io/reg4ling/}}",
+    "", "M.A. course, Institut für deutsche Sprache und Linguistik,",
+    "", "Humboldt-Universität zu Berlin",
+    "", ""
+  )
 
-*Introduction to Ibex and PennController: Internet-based experiments* (workshop) \hfill 2020 \break
-Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+repro_et <- 
+  tribble(
+    ~"Year", ~"Course",
+    "2023", "\\textbf{Reproducible analysis reports with eye-tracking reading time data}",
+    "", "Web book: \\href{https://daniela-palleschi.github.io/repo-eda/}{\\textit{https://daniela-palleschi.github.io/repo-eda/}}",
+    "", "M.A. course, Institut für deutsche Sprache und Linguistik,",
+    "", "Humboldt-Universität zu Berlin",
+    "", ""
+  )
 
-*Introduction to Statistics with R and RStudio*\hfill 2019-2020 \break
-M.A. course, Institute for German Language and Linguistics, Humboldt-Universität zu Berlin
+r_ling <- 
+  tribble(
+    ~"Year", ~"Course",
+    "2023 - 2024", "\\textbf{Angewandte Datenverarbeitung und Visualisierung}",
+    "", "Web book: \\href{https://daniela-palleschi.github.io/r4ling/}{\\textit{https://daniela-palleschi.github.io/r4ling/}}",
+    "", "B.A. course, Institut für deutsche Sprache und Linguistik,",
+    "", "Humboldt-Universität zu Berlin",
+    "", ""
+  )
 
-*Language and the Brain* (tutorial) \hfill 2018, 2019, 2020 \break
-Berlin School of Mind and Brain (M.A. program), Humboldt-Universität zu Berlin \hfill \break 
-Accompanied lectures from Prof. Pia Knoeferle and Prof. Friedemann Pulvermüller
+intro_stats <-
+    tribble(
+    ~"Year", ~"Course",
+    "2019 - 2020", "\\textbf{Introduction to Statistics with R and RStudio}",
+    "", "B.A. course, Institut für deutsche Sprache und Linguistik,",
+    "", "Humboldt-Universität zu Berlin",
+    "", ""
+  )
+
+lang_brain <-
+    tribble(
+    ~"Year", ~"Course",
+    "2019 - 2020", "\\textbf{Language and the Brain} (tutorial)",
+    "", "M.A. course for Berlin School of Mind and Brain, Humboldt-Universität zu Berlin",
+    "", "Accompanied lectures from Prof. Pia Knoeferle and Prof. Friedemann Pulvermüller"
+  )
+
+pcibex <-
+      tribble(
+    ~"Year", ~"Course",
+    "2020", "\\textbf{Introduction to Ibex and PennController: Internet-based experiments} (workshop)
+    Institut für deutsche Sprache und Linguistik, Humboldt-Universität zu Berlin",
+    "", ""
+  )
+  
+```
+
+```{r}
+rbind(
+      sol
+      # reg_ling
+      # r_ling,
+      # repro_et,
+      # pcibex,
+      # intro_stats,
+      # lang_brain
+      ) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+
+rbind(open_sci,
+      reg_ling,
+      r_ling,
+      repro_et,
+      pcibex,
+      intro_stats,
+      lang_brain) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
 
 # Non-academic experience
 
-*Teacher of English as a Second Language* (adults and children) \hfill 2012-2017\break
-Marcus Evans Linguarama, Berlin, Germany
+```{r}
+linguarama <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2012-2017", "\\textbf{Teacher of English as a Second Language} (adults and children)",
+    "", "Marcus Evans Linguarama, Berlin, Germany"
+  )
 
-*TESOL Certification* (Teacher of English to Speakers of Other Languages) \hfill 2012\break
-SOL International School of Language, Toronto, Canada
+tesol <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2012", "\\textbf{TESOL Certification} (Teacher of English to Speakers of Other Languages)",
+    "", "SOL International School of Language, Toronto, Canada"
+  )
+```
+
+```{r}
+rbind(linguarama,
+      tesol) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
+
+# Workshops, summer schools, journal clubs (attendance)
+
+## Data Analyses
+
+```{r}
+
+random_forests <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2023 - ", "\\textbf{The Practical Application of Decision Tree-Based AI Models} (workshop)",
+    "", "Leibniz-Centre General Linguistics (ZAS), Berlin"
+  )
+
+cluster_analysis <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2023 - ", "\\textbf{Cluster analysis on f0 contours: advantages, pitfalls, challenges} (online workshop)",
+    "", "LingLabs, University of Konstanz"
+  )
+
+
+bayes_zas <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2023 - ", "\\textbf{Bayesian group meet-up} (group member)",
+    "", "regular meeting with members of the Leibniz-Centre General Linguistics (ZAS)"
+  )
+
+bayes_hpi <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2023 - ", "\\textbf{Introduction to Bayesian Data Analysis} (course)",
+    "", "openHPI online course (instructor: Prof. Shravan Vasishth)"
+  )
+
+bayes_konstanz <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Intro to Bayesian Analyses for Speech and Language Scientists}, (workshop)",
+    "", "University of Konstanz, Germany"
+  )
+
+bayes_smlp <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Introduction to Bayesian Analysis} (course)",
+    "", "Summer School in Statistical Methods for Linguistics and Psychology (SMLP)",
+    "", "Universität Potsdam,Germany"
+  )
+
+julia_smlp <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2021", "\\textbf{Advanced methods in frequentist statistics with Julia} (course)",
+    "", "Summer School in Statistical Methods for Linguistics and Psychology (SMLP)",
+    "", "Universität Potsdam, Germany"
+  )
+
+freq_smlp <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Foundational methods in frequentist statistics} (course)",
+    "", "Summer School in Statistical Methods for Linguistics and Psychology (SMLP)",
+    "", "Universität Potsdam,Germany"
+  )
+
+gamms <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Generalised Additive Modelling in Statistics} (workshop)",
+    "", "Leibniz-Zentrum Allgemeine Sprachwissenschaft(ZAS Berlin), Germany"
+  )
+```
+
+
+
+```{r}
+rbind(
+      random_forests,
+      cluster_analysis,
+      bayes_zas,
+      bayes_hpi
+      # bayes_konstanz
+      # bayes_smlp,
+      # gamms
+      # julia_smlp
+      ) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
+
+```{r}
+rbind(
+      # bayes_zas,
+      # bayes_hpi,
+      bayes_konstanz,
+      bayes_smlp,
+      gamms,
+      julia_smlp,
+      freq_smlp) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
+
+## Methods and MetaScience
+
+
+```{r}
+
+ag_git <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2024 - ", "\\textbf{Git Arbeitsgruppe} (member)",
+    "", "Interdisziplinäres Zentrum für Digitalität und digitale Methoden am Campus Mitte",
+    "", "Humboldt-Universität zu Berlin"
+  )
+
+coding_club <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Coding Club::Creating an R Package} (online workshop)",
+    "", "Creating an R package to share code and data from a research project"
+  )
+
+git_collab <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Git Collaborative} (workshop)",
+    "", "Max Planck Institute for Psycholinguistics"
+  )
+
+git_basics <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2022", "\\textbf{Git Basics} (workshop)",
+    "", "Max Planck Institute for Psycholinguistics"
+  )
+
+tidyverse <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2021", "\\textbf{Data wrangling and reproducible reports with tidyverse and R-markdown} (workshop)",
+    "", "Universität Freiburg"
+  )
+
+```
+
+```{r}
+rbind(ag_git,
+      coding_club,
+      git_collab,
+      git_basics,
+      tidyverse) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
+
+# Organisation and Service
+
+```{r}
+friday_primes <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2020 - ", "\\textbf{Friday Primes} (co-founder and -organiser)",
+    "", "monthly meet-up for Early Career Researchers in psycholinguistics in Berlin/Brandenburg"
+  )
+
+eslp_attlis <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2019", "\\textbf{Embodied and Situated Language Processing and AttLis} (conference co-organiser)",
+    "", "Humboldt-Universität zu Berlin, Germany"
+  )
+
+amlap <-
+      tribble(
+    ~"Year", ~"Experience",
+    "2019", "\\textbf{Architecture and Mechanisms for Language Processing} (conference on-site organisation)",
+    "", "Berlin, Germany"
+  )
+```
+
+
+```{r}
+rbind(friday_primes,
+      eslp_attlis,
+      amlap) %>%  
+  mutate_all(linebreak) |> 
+  knitr::kable(
+    col.names = NULL,
+    format = "latex", escape = F,
+        booktabs = T,
+        linesep = "",
+        bottomrule = '',
+        toprule = '',
+        midrule = '') 
+```
+
+# Technical skills
+
+Eye-tracking (EyeLink 1000, Experiment Builder, EyeLink DataViewer)\hfill\break
+Internet-based experiments (PCIbex, Prolific, ClickWorker)\hfill\break
+EEG data collection (BrainProducts)\hfill\break
+R and RStudio (data wrangling, analysis, visualisation)\hfill\break
+Technical writing/Dynamic reports (Quarto, RMarkdown, LaTeX)\hfill\break
+Version control (Git, GitHub, GitLab)
+
+# Memberships
+
+*Cognitive Science Society* \hfill 2020 - present\break
+*Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2018 - present\break
+*Einstein Center for Neurosciences Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - present\break
 
 # Publications
 
@@ -107,11 +578,11 @@ Annual Meeting of the Cognitive Science Society.* Toronto, Canada: Cognitive Sci
 Annual Meeting of the Cognitive Science Society.* Toronto, Canada: Cognitive Science Society
 
 \endgroup
-## Works in Progress
+## Under review
 
-**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. “Dead or alive - Effect of lifetime information on processing of temporal verb morphology: evidence from eye-tracking and self-paced reading”
+**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. (under review) “Living in the present - how referent lifetime influences processing of past, present (perfect), and future tenses”
 
-## Conference Presentations
+## Selected Conference Presentations
 
 *Experimental Pragmatics Conference (XPrag)*, Pavia, Italy \hfill 2022 \break
 **Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Processing the Perfect Lifetime Effect: the role of lifetime information source." (poster)
@@ -119,129 +590,17 @@ Annual Meeting of the Cognitive Science Society.* Toronto, Canada: Cognitive Sci
 *Architectures and Mechanisms of Language Processing*, University of York, UK \hfill 2022 \break
 **Palleschi, D.**, Knoeferle, P. "Availability of speaker-specific lifetime and biographical knowledge during comprehension: evidence from eye-tracking during reading." (poster)
 
-*CogSci*, Toronto, Canada \hfill 2022 \break
-**Palleschi, D.**, Knoeferle, P. "Activation of biographical information via picture of cultural figures during comprehension: evidence from eye-tracking during reading." (poster)
-
-*IMPRS Conference*, Max Planck Institute for Psycholinguistics, the Netherlands \hfill 2022 \break
-**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Context effects in the processing of temporal verb morphology: a self-paced reading study." (poster)
-
-*IMPRS Conference*, Max Planck Institute for Psycholinguistics, the Netherlands \hfill 2022 \break
-**Palleschi, D.**, Knoeferle, P. "Effects of prior speaker-specific knowledge on language comprehension: an eye-tracking during reading study" (poster)
-
 *Experiments in Linguistic Meaning (ELM)*, University of Pennsylvania, USA \hfill 2022 \break
 **Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Effects of referent lifetime knowledge on processing of verb morphology." (poster)
 
-*Annual Conference of Human Sentence Processing*, UC Santa Cruz, USA \hfill 2022\break
-**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Effects of long-term biographical knowledge on the processing of temporal phrases and facts: an eye-tracking reading study." (poster)
-
-*Annual Conference of Human Sentence Processing*, UC Santa Cruz, USA \hfill 2022\break
-**Palleschi, D.**, Knoeferle, P. "Context effects in the processing of temporal verb morphology: a self-paced reading study." (poster)
-
-*CogSci*, Vienna, Austria\hfill 2021\break
-**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effects of lifetime and fact knowledge in language comprehension"  (poster)
-
-*CUNY Annual Conference of Human Sentence Processing*, University of Pennsylvania, USA \hfill 2021\break
-**Palleschi, D.**, Knoeferle, P. "Effects of lifetime and fact knowledge in
-language comprehension" (poster)
-
-*CUNY Annual Conference of Human Sentence Processing*, University of Pennsylvania, USA \hfill 2021\break
-**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effect of referent lifetime in the processing of verbal morphology: a self-paced reading study" (poster)
-
-*CUNY Annual Conference of Human Sentence Processing*, University of Massachusetts, Amherst, USA \hfill 2020\break
-**Palleschi, D.**,Ronderos, C.R., Knoeferle, P. "Effect of referent lifetime in the processing of verbal morphology: a self-paced reading study" (poster)
-
-*Architectures and Mechanisms of Language Processing*, Moscow, Russia \hfill 2019\break
-**Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "What's in a name? Integration of linguistic and non-linguistic context in language processing" (poster)
-
 *Processing Tense Workshop*, Tübingen,  \hfill 2019\break
 **Palleschi, D.**, Ronderos, C.R., Knoeferle, P. "Processing the Present Perfect Lifetime Effect: an eye-tracking during reading study on the integration of context, tense, and aspect" (talk)
-
-## Invited talks
-
-*Psychosemantics group*, Universität Potsdam, Germany\hfill 2021\break
-"Effect of lifetime information on the processing of temporal verb morphology"
-Organiser: Prof. Nicole Gotzner
-
-*Language and Cognition Lab*, Heidelberg University, Germany\hfill 2020\break
-"Integration of specific world knowledge and verbal morphology during language processing"
-Organiser: Prof. Johannes Gerwien
-
-# Workshops, summer schools, journal clubs (attendance)
-
-## Data Analyses
-
-*Intro to Bayesian Analyses for Speech and Language Scientists*\hfill 2022\break
-University of Konstanz, Germany\hfill\break
-Workshop taught by Dr Stefano Coretta
-
-*Introduction to Bayesian data analysis*\hfill 2022\break
-Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
-Summer school taught by Shravan Vasishth, assisted by Anna Laurinavichyute
-
-*Generalised Additive Modelling in Statistics*\hfill 2022
-Leibniz-Zentrum Allgemeine Sprachwissenschaft (ZAS Berlin), Germany
-Workshop taught by Màrton Sóskuthy
-
-*Advanced methods in frequentist statistics with Julia* \hfill 2021\break
-Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
-Taught by Phillip Alday, Douglas Bates, and Reinhold Kliegl
-
-*Foundational methods in frequentist statistics* \hfill 2020\break
-Summer School in Statistical Methods for Linguistics and Psychology (SMLP), Universität Potsdam, Germany\hfill\break
-Taught by Daniel Schad
-
-## Methods and MetaScience
-
-*Coding Club::Creating an R Package*, led by Prof. Lisa DeBruine \hfill 2022\break
-Creating an R package to share code and data from a research project
-
-*Git Collaborative*, Max Planck Institute for Psycholinguistics \hfill 2022\break
-Workshop
-
-*Git Basics*, Max Planck Institute for Psycholinguistics \hfill 2022\break
-Workshop
-
-*Data wrangling and reproducible reports with tidyverse and R-markdown* \hfill 2021\break
-Workshop
-
-## Open Science
-
-*ReproducibiliTea*, Berlin chapter \hfill 2021 -\break
-Journal Club
-
-# Organisation
-
-*Friday Primes*, monthly meet-up for Early Career Researchers in psycholinguistics\hfill 2020 -\break
-Co-organisers: Radim Lacina (University of Potsdam) and Isabella Boux (Freie Universität)
-
-*Embodied and Situated Language Processing and AttLis*, joint conference \hfill 2019\break
-Humboldt-Universität zu Berlin, Germany\hfill\break
-Co-organisers: Aine Ito, Camilo R. Ronderos, Huong Nguyen, Katja Mquate
-
-*Architecture and Mechanisms for Language Processing* \hfill 2018\break 
-On-site organisation
 
 # Mentoring and training
 
 Mentored Master's Thesis on world knowledge effects in tense processing (Aliona Petrenco);\hfill \break
 Hired, trained, and managed three research assistants (Studentische und wissenschaftliche Hilfskraft); \hfill \break
 Training of student interns in data collection (eye-tracking and EEG)
-
-# Memberships
-
-*Cognitive Science Society* \hfill 2020 - present\break
-*Berlin School of Mind and Brain*, Humboldt-Universität zu Berlin \hfill 2018 - present\break
-*Einstein Center for Neurosciences Berlin*, Charité - Universitätsmedizin Berlin \hfill 2017 - present\break
-
-# Technical skills
-
-Eye-tracking (EyeLink 1000, Experiment Builder, EyeLink DataViewer)\hfill\break
-Internet-based experiments (PCIbex, Prolific, ClickWorker)\hfill\break
-EEG data collection (BrainProducts)\hfill\break
-Audio processing (Praat, Audacity)\hfill\break
-R and RStudio (data wrangling, analysis, visualisation)\hfill\break
-Technical writing/Dynamic reports (Quarto, RMarkdown, LaTeX)\hfill\break
-Version control (Git, GitHub, GitLab)
 
 # Language competences
 
